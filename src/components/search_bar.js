@@ -15,11 +15,9 @@ import ReactDOM from 'react-dom';
 // };
 class SearchBar extends Component {
     render() {
-      return <input onChange={this.onInputChange} />;
+      return <input onChange={event => console.log(event.target.value)} />;
     }
 
-    onInputChange(event) {  //Event Handler
-      console.log(event)
     }
 }
 
